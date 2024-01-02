@@ -1,3 +1,4 @@
+`use strict`;
 //variables
 const nameText = document.querySelector("#nome");
 const btn = document.querySelector("#btn");
