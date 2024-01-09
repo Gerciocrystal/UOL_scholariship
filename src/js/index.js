@@ -51,7 +51,10 @@ const messages = [
     message: "Por favor, digite um numero valido",
   },
 ];
-
+const activeButton = () => {
+  if (!number.value) btn.disabled = true;
+  else btn.disabled = false;
+};
 // evensHandlers
 const giveHints = (guestNumber) => {
   try {
@@ -89,6 +92,8 @@ const giveHints = (guestNumber) => {
     }
   } catch (error) {
     addResult(messages[8].message, messages[8].status);
+  } finally {
+    activeButton();
   }
 };
 
