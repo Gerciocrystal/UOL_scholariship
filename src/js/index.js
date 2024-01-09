@@ -40,7 +40,7 @@ const messages = [
   },
   {
     status: "near",
-    message: "tente um numero um muito maior Menor",
+    message: "tente um numero um pouco Menor",
   },
   {
     status: "error",
@@ -105,7 +105,7 @@ const isTheNumber = () => {
       window.alert(`Parabens ${nameText.textContent}, Vocé Ganhou`);
     else {
       window.alert(
-        `lamento ${nameText.textContent} mas voce errou, se as dicas para se sair melhor da proxima vez`
+        `lamento ${nameText.textContent} mas voce errou, sigua dicas para se sair melhor da proxima vez`
       );
       giveHints(temp);
     }
@@ -114,6 +114,7 @@ const isTheNumber = () => {
     addResult(messages[7].message, messages[7].status);
   }
 };
+
 //events
 number.addEventListener("input", (e) => giveHints(e.target.value));
 btn.addEventListener("click", isTheNumber);
