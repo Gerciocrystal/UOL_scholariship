@@ -105,7 +105,7 @@ const isTheNumber = () => {
       window.alert(`Parabens ${nameText.textContent}, Vocé Ganhou`);
     else {
       window.alert(
-        `lamento ${nameText.textContent} mas voce errou, sigua dicas para se sair melhor da proxima vez`
+        `lamento ${nameText.textContent} mas voce errou, fique de olho nas dicas para se sair melhor da proxima vez`
       );
       giveHints(temp);
     }
